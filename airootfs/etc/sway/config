@@ -6,15 +6,24 @@ set $mod Mod1
 # Apps
 set $term foot
 set $menu wofi --show drun
+set $browser chromium
 
 # Keybindings
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
+bindsym $mod+b exec $browser
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaymsg exit
 
-# Display & Visuals
-output * mode 1680x1050
+# Window management
+bindsym $mod+q kill
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+bindsym $mod+f fullscreen toggle
+
+# Display & Visuals (auto resolution for compatibility)
 output * bg /usr/share/backgrounds/gold_bg.png fill
 
 # Status Bar

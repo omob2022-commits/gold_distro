@@ -139,5 +139,12 @@ xorg-xwayland
 zsh
 fastfetch
 swaybg
-waybar
-
+wofi
+chromium
+nss
+libxss
+gtk3
+gtk4
+pango
+cairo
+gdk-pixbuf2

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# GoldScript - GoldOS scripting environment placeholder
+# TODO: Add your GoldScript implementation here
+
+echo "GoldScript v0.1 - GoldOS Scripting Environment"
+echo "Usage: goldscript [script.gs]"
+echo ""
+
+if [ -z "$1" ]; then
+    echo "No script file provided. Entering interactive mode..."
+    echo "Type 'exit' to quit."
+    while true; do
+        read -p "gs> " cmd
+        if [ "$cmd" = "exit" ]; then
+            break
+        fi
+        echo "Executing: $cmd"
+        eval "$cmd"
+    done
+else
+    echo "Running script: $1"
+    if [ -f "$1" ]; then
+        bash "$1"
+    else
+        echo "Error: Script file '$1' not found."
+        exit 1
+    fi
+fi

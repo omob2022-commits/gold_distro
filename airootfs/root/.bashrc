@@ -7,7 +7,8 @@ echo "| |  _ / _ \| |/ _  | | | \___ \ "
 echo "| |_| | (_) | | (_| | |_| |___) |"
 echo " \____|\___/|_|\__,_|\___/|____/ "
 echo -e "\e[0m"
-echo "GoldScript & StoneScript environments are ready."
+echo "GoldScript environment is ready. Type 'gs' to run GoldScript."
+echo "Chromium browser available. Type 'chromium' to launch."
 
 alias gs='/usr/bin/goldscript'
-alias ss='/usr/bin/stonescript'
+alias browser='chromium'
