@@ -1,0 +1,5 @@
+output * bg /usr/share/backgrounds/gold_bg.png fill
+bar {
+    swaybar_command waybar
+}
+output * mode 1680x1050

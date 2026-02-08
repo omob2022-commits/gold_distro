@@ -1,0 +1,23 @@
+### GoldOS Master Config ###
+
+# Set Mod to Alt (Mod1) or Windows Key (Mod4)
+set $mod Mod1
+
+# Apps
+set $term foot
+set $menu wofi --show drun
+
+# Keybindings
+bindsym $mod+Return exec $term
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+e exec swaymsg exit
+
+# Display & Visuals
+output * mode 1680x1050
+output * bg /usr/share/backgrounds/gold_bg.png fill
+
+# Status Bar
+bar {
+    swaybar_command waybar
+}
