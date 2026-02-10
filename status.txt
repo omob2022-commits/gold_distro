@@ -1,0 +1,79 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+	modified:   airootfs/etc/hostname
+	modified:   airootfs/etc/locale.conf
+	modified:   airootfs/etc/mkinitcpio.conf.d/archiso.conf
+	modified:   airootfs/etc/mkinitcpio.d/linux.preset
+	modified:   airootfs/etc/modprobe.d/broadcom-wl.conf
+	modified:   airootfs/etc/motd
+	modified:   airootfs/etc/pacman.d/hooks/uncomment-mirrors.hook
+	modified:   airootfs/etc/pacman.d/hooks/zzzz99-remove-custom-hooks-from-airootfs.hook
+	modified:   airootfs/etc/passwd
+	modified:   airootfs/etc/shadow
+	modified:   airootfs/etc/skel/.bash_profile
+	modified:   airootfs/etc/skel/.bashrc
+	modified:   airootfs/etc/skel/.config/sway/config
+	modified:   airootfs/etc/ssh/sshd_config.d/10-archiso.conf
+	modified:   airootfs/etc/sway/config
+	modified:   airootfs/etc/systemd/journald.conf.d/volatile-storage.conf
+	modified:   airootfs/etc/systemd/logind.conf.d/do-not-suspend.conf
+	modified:   airootfs/etc/systemd/network/20-ethernet.network
+	modified:   airootfs/etc/systemd/network/20-wlan.network
+	modified:   airootfs/etc/systemd/network/20-wwan.network
+	modified:   airootfs/etc/systemd/networkd.conf.d/ipv6-privacy-extensions.conf
+	modified:   airootfs/etc/systemd/resolved.conf.d/archiso.conf
+	modified:   airootfs/etc/systemd/system/choose-mirror.service
+	modified:   airootfs/etc/systemd/system/etc-pacman.d-gnupg.mount
+	modified:   airootfs/etc/systemd/system/getty@tty1.service.d/autologin.conf
+	modified:   airootfs/etc/systemd/system/livecd-alsa-unmuter.service
+	modified:   airootfs/etc/systemd/system/livecd-talk.service
+	modified:   airootfs/etc/systemd/system/pacman-init.service
+	modified:   airootfs/etc/systemd/system/systemd-networkd-wait-online.service.d/wait-for-only-one-interface.conf
+	modified:   airootfs/root/.automated_script.sh
+	modified:   airootfs/root/.bash_profile
+	modified:   airootfs/root/.bashrc
+	modified:   airootfs/root/.gnupg/scdaemon.conf
+	modified:   airootfs/root/.zlogin
+	modified:   airootfs/usr/bin/goldscript
+	modified:   airootfs/usr/local/bin/Installation_guide
+	modified:   airootfs/usr/local/bin/choose-mirror
+	modified:   airootfs/usr/local/bin/livecd-sound
+	modified:   airootfs/usr/local/share/livecd-sound/asound.conf.in
+	modified:   airootfs/usr/share/backgrounds/gold_bg.png
+	modified:   bootstrap_packages
+	modified:   efiboot/loader/entries/01-archiso-linux.conf
+	modified:   efiboot/loader/entries/02-archiso-speech-linux.conf
+	modified:   efiboot/loader/entries/03-archiso-memtest86+x64.conf
+	modified:   efiboot/loader/loader.conf
+	modified:   grub/grub.cfg
+	modified:   grub/loopback.cfg
+	modified:   packages.x86_64
+	modified:   pacman.conf
+	modified:   profiledef.sh
+	modified:   syslinux/archiso_head.cfg
+	modified:   syslinux/archiso_pxe-linux.cfg
+	modified:   syslinux/archiso_pxe.cfg
+	modified:   syslinux/archiso_sys-linux.cfg
+	modified:   syslinux/archiso_sys.cfg
+	modified:   syslinux/archiso_tail.cfg
+	modified:   syslinux/splash.png
+	modified:   syslinux/syslinux.cfg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	airootfs/etc/skel/.config/dunst/
+	airootfs/etc/skel/.config/foot/
+	airootfs/etc/skel/.config/hypr/
+	airootfs/etc/skel/.config/nvim/
+	airootfs/etc/skel/.config/waybar/
+	airootfs/etc/skel/.config/wofi/
+	airootfs/usr/local/bin/goldos-setup-antigravity
+	out/
+	status.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")

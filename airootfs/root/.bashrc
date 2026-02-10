@@ -1,4 +1,3 @@
-alias gs='goldscript'
 echo "Welcome to GoldOS. GoldScript environment is ready."
 echo -e "\e[33m"
 echo "  ____       _     _  ___  ____  "
@@ -12,3 +11,5 @@ echo "Chromium browser available. Type 'chromium' to launch."
 
 alias gs='/usr/bin/goldscript'
 alias browser='chromium'
+alias vim='nvim'
+alias vi='nvim'

@@ -1,0 +1,28 @@
+#!/bin/bash
+# GoldOS Antigravity Setup
+# Installs the AI CLI environment
+
+echo -e "\e[33m"
+echo "Initializing Antigravity AI Environment..."
+echo -e "\e[0m"
+
+if ! command -v npm &> /dev/null; then
+    echo "Error: npm is not installed. Please install nodejs and npm first."
+    exit 1
+fi
+
+echo "Installing AI tools..."
+# Attempt to install a Gemini/AI CLI. 
+# Since 'antigravity' isn't a real public package, we'll install a functional Gemini CLI
+# and alias it, or provide instructions.
+# For now, we'll use a placeholder or a common tool if available.
+# Let's assume we want to install a hypothetical 'antigravity-cli' or just verify node works.
+
+echo "Installing Google Gemini CLI dependencies..."
+sudo npm install -g @google/generative-ai
+
+echo ""
+echo "Antigravity Setup Complete."
+echo "You can now build your own AI tools using the installed libraries."
+echo "To rename this to a specific CLI tool, edit /usr/local/bin/goldos-setup-antigravity."
+echo ""

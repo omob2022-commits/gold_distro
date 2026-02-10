@@ -1,0 +1,146 @@
+/* ═══════════════════════════════════════════════════════════
+   GoldOS Waybar Theme — Dark Gold / Amber Glassmorphism
+   ═══════════════════════════════════════════════════════════ */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: rgba(26, 26, 46, 0.85);
+    border-radius: 14px;
+    border: 1px solid rgba(212, 160, 74, 0.3);
+    color: #e0d8c0;
+}
+
+tooltip {
+    background: rgba(26, 26, 46, 0.92);
+    border: 1px solid rgba(212, 160, 74, 0.4);
+    border-radius: 10px;
+    color: #e0d8c0;
+}
+
+/* ── Module Base ──────────────────────────────────────────── */
+
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+    padding: 0 14px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* ── Workspaces ───────────────────────────────────────────── */
+
+#workspaces button {
+    padding: 0 6px;
+    margin: 3px 2px;
+    border-radius: 8px;
+    color: #8a8070;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(212, 160, 74, 0.15);
+    color: #d4a04a;
+}
+
+#workspaces button.active {
+    background: linear-gradient(135deg, rgba(212, 160, 74, 0.3), rgba(240, 198, 116, 0.2));
+    color: #f0c674;
+    border: 1px solid rgba(212, 160, 74, 0.4);
+    box-shadow: 0 0 8px rgba(212, 160, 74, 0.15);
+}
+
+#workspaces button.urgent {
+    background: rgba(224, 108, 90, 0.3);
+    color: #e06c5a;
+}
+
+/* ── Window Title ─────────────────────────────────────────── */
+
+#window {
+    color: #c8c0a8;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* ── Clock ────────────────────────────────────────────────── */
+
+#clock {
+    background: linear-gradient(135deg, rgba(212, 160, 74, 0.2), rgba(240, 198, 116, 0.1));
+    color: #f0c674;
+    font-weight: 700;
+    border: 1px solid rgba(212, 160, 74, 0.2);
+}
+
+/* ── Audio ────────────────────────────────────────────────── */
+
+#pulseaudio {
+    color: #c792ea;
+}
+
+#pulseaudio.muted {
+    color: #5c5c5c;
+}
+
+/* ── Network ──────────────────────────────────────────────── */
+
+#network {
+    color: #5ac4c4;
+}
+
+#network.disconnected {
+    color: #e06c5a;
+}
+
+/* ── Battery ──────────────────────────────────────────────── */
+
+#battery {
+    color: #7ec699;
+}
+
+#battery.charging {
+    color: #f0c674;
+}
+
+#battery.warning:not(.charging) {
+    color: #d4a04a;
+}
+
+#battery.critical:not(.charging) {
+    background: rgba(224, 108, 90, 0.2);
+    color: #e06c5a;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* ── Tray ─────────────────────────────────────────────────── */
+
+#tray {
+    margin-right: 4px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}

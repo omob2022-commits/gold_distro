@@ -1,0 +1,67 @@
+/* ═══════════════════════════════════════════════════════════
+   GoldOS Wofi Theme — Dark Gold Glassmorphism
+   ═══════════════════════════════════════════════════════════ */
+
+window {
+    margin: 0;
+    border: 1px solid rgba(212, 160, 74, 0.35);
+    background-color: rgba(26, 26, 46, 0.9);
+    border-radius: 14px;
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+#input {
+    all: unset;
+    margin: 8px 12px;
+    padding: 10px 16px;
+    border: 1px solid rgba(212, 160, 74, 0.3);
+    border-radius: 10px;
+    background-color: rgba(30, 30, 55, 0.8);
+    color: #e0d8c0;
+    font-size: 14px;
+}
+
+#input:focus {
+    border-color: rgba(212, 160, 74, 0.6);
+    box-shadow: 0 0 8px rgba(212, 160, 74, 0.15);
+}
+
+#inner-box {
+    margin: 4px 8px;
+}
+
+#outer-box {
+    margin: 0;
+    padding: 0;
+}
+
+#scroll {
+    margin: 0;
+}
+
+#text {
+    margin: 0 8px;
+    color: #c8c0a8;
+}
+
+#entry {
+    padding: 8px 12px;
+    margin: 2px 4px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+#entry:selected {
+    background: linear-gradient(135deg, rgba(212, 160, 74, 0.25), rgba(240, 198, 116, 0.15));
+    border: 1px solid rgba(212, 160, 74, 0.35);
+}
+
+#entry:selected #text {
+    color: #f0c674;
+    font-weight: 600;
+}
+
+#img {
+    margin-right: 8px;
+}

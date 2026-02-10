@@ -1,1 +1,1 @@
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec sway
+if [[ -z $WAYLAND_DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec Hyprland; fi

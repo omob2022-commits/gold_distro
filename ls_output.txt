@@ -1,0 +1,14 @@
+Permissions Size User Date Modified Name
+drwxr-xr-x     - omob 10 Feb 18:21  .git
+drwxr-xr-x     - omob  9 Feb 03:41  airootfs
+drwxr-xr-x     - omob  9 Feb 03:41  efiboot
+drwxr-xr-x     - omob 10 Feb 17:15  grub
+drwxr-xr-x     - omob 10 Feb 17:31  out
+drwxr-xr-x     - omob 10 Feb 17:16  syslinux
+.rw-r--r--   459 omob 10 Feb 17:16  .gitignore
+.rw-r--r--    26 omob 10 Feb 17:16  bootstrap_packages
+.rw-r--r--     0 omob 10 Feb 18:21  ls_output.txt
+.rw-r--r--  1.7k omob 10 Feb 17:16  packages.x86_64
+.rw-r--r--  3.0k omob 10 Feb 17:16  pacman.conf
+.rw-r--r--   988 omob 10 Feb 17:16  profiledef.sh
+.rw-r--r--  3.6k omob 10 Feb 18:21  status.txt

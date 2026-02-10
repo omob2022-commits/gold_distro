@@ -1,0 +1,56 @@
+# GoldOS Dunst Notification Config
+
+[global]
+    monitor = 0
+    follow = mouse
+    width = 350
+    height = (0, 300)
+    origin = top-right
+    offset = 16x16
+    notification_limit = 5
+    progress_bar = true
+
+    indicate_hidden = yes
+    shrink = no
+    separator_height = 2
+    separator_color = "#3d3d5c"
+
+    padding = 16
+    horizontal_padding = 16
+    text_icon_padding = 16
+
+    frame_width = 1
+    frame_color = "#d4a04a55"
+    corner_radius = 12
+
+    font = JetBrainsMono Nerd Font 11
+    line_height = 4
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 30
+
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+
+    mouse_left_click = do_action, close_current
+    mouse_middle_click = close_all
+    mouse_right_click = close_current
+
+[urgency_low]
+    background = "#1a1a2eDD"
+    foreground = "#c8c0a8"
+    timeout = 4
+
+[urgency_normal]
+    background = "#1a1a2eEE"
+    foreground = "#e0d8c0"
+    highlight = "#d4a04a"
+    timeout = 8
+
+[urgency_critical]
+    background = "#2a1a1aEE"
+    foreground = "#e06c5a"
+    frame_color = "#e06c5a88"
+    timeout = 0

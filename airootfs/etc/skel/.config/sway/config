@@ -21,7 +21,7 @@ set $menu wmenu-run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /usr/share/backgrounds/gold_bg.png fill
 #
 # Example configuration:
 #
@@ -227,32 +227,5 @@ bar {
         background #323232
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
-}
-# GoldOS Sway Configuration
-
-# Set the modifier key to Super (Windows Key)
-set $mod Mod4
-
-# Set the preferred terminal
-set $term foot
-
-# Set a background color (Dark Gold/Charcoal)
-output * bg #1a1a11 solid_color
-
-# Font for window titles and bar
-font pango:monospace 10
-
-# Use Mouse+$mod to drag floating windows
-floating_modifier $mod
-
-# Keybindings
-bindsym $mod+Return exec $term
-bindsym $mod+Shift+q kill
-bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Yes' 'swaymsg exit'
-
-# --- GoldOS Specifics ---
-
-# Automatically open a terminal on boot to show the GoldScript welcome
-exec $term
 
 include /etc/sway/config.d/*

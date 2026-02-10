@@ -1,5 +1,4 @@
 # Prerequisites
-*.d
 
 # Object files
 *.o
@@ -53,3 +52,6 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# ArchISO output directory
+out/
